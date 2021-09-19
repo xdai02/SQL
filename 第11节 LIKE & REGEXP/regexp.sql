@@ -1,0 +1,1 @@
+SELECT * FROM info WHERE name REGEXP "^[AEIOUaeiou]";

@@ -1,0 +1,1 @@
+SELECT * FROM info WHERE name LIKE "_e%y";

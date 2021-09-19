@@ -1,0 +1,1 @@
+SELECT name, COUNT(*) FROM info GROUP BY age;

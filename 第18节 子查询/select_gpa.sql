@@ -1,0 +1,3 @@
+SELECT name FROM info
+WHERE gpa <
+(SELECT gpa FROM info ORDER BY gpa DESC LIMIT 1);
