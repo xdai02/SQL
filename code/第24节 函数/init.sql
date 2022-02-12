@@ -4,7 +4,7 @@ CREATE TABLE info(
 	id int unsigned PRIMARY KEY AUTO_INCREMENT,
 	name varchar(20),
 	gpa double(5, 2),
-	enrol_date timestamp
+	enroll_date timestamp
 );
 
 INSERT INTO info VALUES

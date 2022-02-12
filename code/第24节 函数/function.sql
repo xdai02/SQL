@@ -8,5 +8,5 @@ FROM info;
 
 SELECT
     CONCAT(name, "(", id, ")") AS student, 
-    DATE(enrol_date)
+    DATE(enroll_date)
 FROM info;
