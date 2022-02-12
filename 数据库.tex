@@ -101,106 +101,106 @@
 \thispagestyle{empty}
 
 \begin{tikzpicture}[overlay,remember picture]
-	% Background color
-	\fill[
-		black!2]
-	(current page.south west) rectangle (current page.north east);
+    % Background color
+    \fill[
+        black!2]
+    (current page.south west) rectangle (current page.north east);
 
-	% Rectangles
-	\shade[
-		left color=Dandelion,
-		right color=Dandelion!40,
-		transform canvas ={rotate around ={45:($(current page.north west)+(0,-6)$)}}]
-	($(current page.north west)+(0,-6)$) rectangle ++(9,1.5);
+    % Rectangles
+    \shade[
+        left color=Dandelion,
+        right color=Dandelion!40,
+        transform canvas ={rotate around ={45:($(current page.north west)+(0,-6)$)}}]
+    ($(current page.north west)+(0,-6)$) rectangle ++(9,1.5);
 
-	\shade[
-		left color=lightgray,
-		right color=lightgray!50,
-		rounded corners=0.75cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(.5,-10)$)}}]
-	($(current page.north west)+(0.5,-10)$) rectangle ++(15,1.5);
+    \shade[
+        left color=lightgray,
+        right color=lightgray!50,
+        rounded corners=0.75cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(.5,-10)$)}}]
+    ($(current page.north west)+(0.5,-10)$) rectangle ++(15,1.5);
 
-	\shade[
-		left color=lightgray,
-		rounded corners=0.3cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(.5,-10)$)}}] ($(current page.north west)+(1.5,-9.55)$) rectangle ++(7,.6);
+    \shade[
+        left color=lightgray,
+        rounded corners=0.3cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(.5,-10)$)}}] ($(current page.north west)+(1.5,-9.55)$) rectangle ++(7,.6);
 
-	\shade[
-		left color=orange!80,
-		right color=orange!60,
-		rounded corners=0.4cm,
-		transform canvas ={rotate around ={45:($(current page.north)+(-1.5,-3)$)}}]
-	($(current page.north)+(-1.5,-3)$) rectangle ++(9,0.8);
+    \shade[
+        left color=orange!80,
+        right color=orange!60,
+        rounded corners=0.4cm,
+        transform canvas ={rotate around ={45:($(current page.north)+(-1.5,-3)$)}}]
+    ($(current page.north)+(-1.5,-3)$) rectangle ++(9,0.8);
 
-	\shade[
-		left color=red!80,
-		right color=red!80,
-		rounded corners=0.9cm,
-		transform canvas ={rotate around ={45:($(current page.north)+(-3,-8)$)}}] ($(current page.north)+(-3,-8)$) rectangle ++(15,1.8);
+    \shade[
+        left color=red!80,
+        right color=red!80,
+        rounded corners=0.9cm,
+        transform canvas ={rotate around ={45:($(current page.north)+(-3,-8)$)}}] ($(current page.north)+(-3,-8)$) rectangle ++(15,1.8);
 
-	\shade[
-		left color=orange,
-		right color=Dandelion,
-		rounded corners=0.9cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(4,-15.5)$)}}]
-	($(current page.north west)+(4,-15.5)$) rectangle ++(30,1.8);
+    \shade[
+        left color=orange,
+        right color=Dandelion,
+        rounded corners=0.9cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(4,-15.5)$)}}]
+    ($(current page.north west)+(4,-15.5)$) rectangle ++(30,1.8);
 
-	\shade[
-		left color=RoyalBlue,
-		right color=Emerald,
-		rounded corners=0.75cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(13,-10)$)}}]
-	($(current page.north west)+(13,-10)$) rectangle ++(15,1.5);
+    \shade[
+        left color=RoyalBlue,
+        right color=Emerald,
+        rounded corners=0.75cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(13,-10)$)}}]
+    ($(current page.north west)+(13,-10)$) rectangle ++(15,1.5);
 
-	\shade[
-		left color=lightgray,
-		rounded corners=0.3cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(18,-8)$)}}]
-	($(current page.north west)+(18,-8)$) rectangle ++(15,0.6);
+    \shade[
+        left color=lightgray,
+        rounded corners=0.3cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(18,-8)$)}}]
+    ($(current page.north west)+(18,-8)$) rectangle ++(15,0.6);
 
-	\shade[
-		left color=lightgray,
-		rounded corners=0.4cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(19,-5.65)$)}}]
-	($(current page.north west)+(19,-5.65)$) rectangle ++(15,0.8);
+    \shade[
+        left color=lightgray,
+        rounded corners=0.4cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(19,-5.65)$)}}]
+    ($(current page.north west)+(19,-5.65)$) rectangle ++(15,0.8);
 
-	\shade[
-		left color=OrangeRed,
-		right color=red!80,
-		rounded corners=0.6cm,
-		transform canvas ={rotate around ={45:($(current page.north west)+(20,-9)$)}}]
-	($(current page.north west)+(20,-9)$) rectangle ++(14,1.2);
+    \shade[
+        left color=OrangeRed,
+        right color=red!80,
+        rounded corners=0.6cm,
+        transform canvas ={rotate around ={45:($(current page.north west)+(20,-9)$)}}]
+    ($(current page.north west)+(20,-9)$) rectangle ++(14,1.2);
 
-	% Year
-	% \draw[ultra thick,gray]
-	% ($(current page.center)+(5,2)$) -- ++(0,-3cm)
-	node[
-			midway,
-			left=0.25cm,
-			text width=5cm,
-			align=right,
-			black!75
-		]
-		{
-			% {\fontsize{25}{30} \selectfont \bf ANNUAL \\[10pt] REPORT}
-		}
-	node[
-			midway,
-			right=0.25cm,
-			text width=6cm,
-			align=left,
-			orange]
-		{
-			% {\fontsize{72}{86.4} \selectfont 2020}
-		};
+    % Year
+    % \draw[ultra thick,gray]
+    % ($(current page.center)+(5,2)$) -- ++(0,-3cm)
+    node[
+            midway,
+            left=0.25cm,
+            text width=5cm,
+            align=right,
+            black!75
+        ]
+        {
+            % {\fontsize{25}{30} \selectfont \bf ANNUAL \\[10pt] REPORT}
+        }
+    node[
+            midway,
+            right=0.25cm,
+            text width=6cm,
+            align=left,
+            orange]
+        {
+            % {\fontsize{72}{86.4} \selectfont 2020}
+        };
 
-	% Title
-	\node[align=center] at ($(current page.center)+(0,-7)$)
-	{
-	{\fontsize{72}{72} \selectfont {{数据库}}} \\[1cm]
-	{\fontsize{42}{42} \selectfont {{Database}}} \\[2cm]
-	{\fontsize{20}{19.2} \selectfont \textcolor{orange}{ \bf 极夜酱}} \\[4pt]
-	};
+    % Title
+    \node[align=center] at ($(current page.center)+(0,-7)$)
+    {
+    {\fontsize{72}{72} \selectfont {{数据库}}} \\[1cm]
+    {\fontsize{42}{42} \selectfont {{Database}}} \\[2cm]
+    {\fontsize{20}{19.2} \selectfont \textcolor{orange}{ \bf 极夜酱}} \\[4pt]
+    };
 \end{tikzpicture}
 
 \newpage
@@ -966,8 +966,8 @@
 % \end{lstlisting}
 
 % \begin{tcolorbox}
-% 	\mybox{运行结果}
-% 	\begin{verbatim}
+%     \mybox{运行结果}
+%     \begin{verbatim}
 % +-----------+
 % | version() |
 % +-----------+
@@ -1009,8 +1009,8 @@
 % \end{lstlisting}
 
 % \begin{tcolorbox}
-% 	\mybox{运行结果}
-% 	\begin{verbatim}
+%     \mybox{运行结果}
+%     \begin{verbatim}
 % +-------+------+
 % | name  | gpa  |
 % +-------+------+
@@ -1051,8 +1051,8 @@
 % \end{lstlisting}
 
 % \begin{tcolorbox}
-% 	\mybox{运行结果}
-% 	\begin{verbatim}
+%     \mybox{运行结果}
+%     \begin{verbatim}
 % +--------------+------+
 % | student_name | gpa  |
 % +--------------+------+
@@ -1083,8 +1083,8 @@
 % \end{lstlisting}
 
 % \begin{tcolorbox}
-% 	\mybox{运行结果}
-% 	\begin{verbatim}
+%     \mybox{运行结果}
+%     \begin{verbatim}
 % +-------+------+
 % | name  | gpa  |
 % +-------+------+
@@ -1100,59 +1100,45 @@
 
 % \section{WHERE}
 
-% 数据表中的数据往往比较繁杂，在查询的时候需要按照一定的条件进行筛选，WHERE指令用于筛选出满足条件的结果集。 \\
-
-% WHERE后仅有一个条件子句的查询称为单条件查询。
+% 数据表中的数据往往比较繁杂，在查询的时候需要按照一定的条件进行筛选，WHERE指令用于筛选出满足条件的结果集。WHERE后仅有一个条件子句的查询称为单条件查询。
 
 % \vspace{-0.5cm}
 
 % \begin{lstlisting}[language=SQL]
-% SELECT [col1], [col2] from [table_name]WHERE [col] [condition] [val];
+% SELECT [col1], [col2] from [table_name] WHERE [col] [condition] [val];
 % \end{lstlisting}
 
-% 搭配不同的运算符，可以让WHERE的条件过滤变得更为强大。
-
 % \begin{table}[H]
-% 	\centering
-% 	\setlength{\tabcolsep}{5mm}{
-% 		\begin{tabular}{|c|c|}
-% 			\hline
-% 			\textbf{运算符} & \textbf{功能} \\
-% 			\hline
-% 			>               & 大于          \\
-% 			\hline
-% 			>=              & 大于等于      \\
-% 			\hline
-% 			<               & 小于          \\
-% 			\hline
-% 			<=              & 小于等于      \\
-% 			\hline
-% 			=               & 等于          \\
-% 			\hline
-% 			!=、<>          & 不等于        \\
-% 			\hline
-% 			!>              & 不大于        \\
-% 			\hline
-% 			!<              & 不小于        \\
-% 			\hline
-% 			AND             & 与            \\
-% 			\hline
-% 			OR              & 或            \\
-% 			\hline
-% 		\end{tabular}
-% 	}
-% 	\caption{运算符}
+%     \centering
+%     \setlength{\tabcolsep}{5mm}{
+%         \begin{tabular}{|c|c|c|c|}
+%             \hline
+%             \textbf{运算符} & \textbf{功能} & \textbf{运算符} & \textbf{功能} \\
+%             \hline
+%             >               & 大于          & >=              & 大于等于      \\
+%             \hline
+%             <               & 小于          & <=              & 小于等于      \\
+%             \hline
+%             =               & 等于          & !=、<>          & 不等于        \\
+%             \hline
+%             !>              & 不大于        & !<              & 不小于        \\
+%             \hline
+%             AND             & 与            & OR              & 或            \\
+%             \hline
+%         \end{tabular}
+%     }
+%     \caption{运算符}
 % \end{table}
 
-% \mybox{查询info表中gpa在3.3~3.5之间的学生}
+% \mybox{查询info表中gpa在3.3 $ \sim $ 3.5之间的学生}
 
 % \begin{lstlisting}[language=SQL]
 % SELECT * from info WHERE gpa >= 3.3 AND gpa <= 3.6;
 % \end{lstlisting}
 
 % \begin{tcolorbox}
-% 	\mybox{运行结果}
-% 	\begin{verbatim}
+%     \mybox{运行结果}
+%     \begin{verbatim}
 % +------+-------+------+
 % | id   | name  | gpa  |
 % +------+-------+------+
@@ -1216,8 +1202,8 @@
 % \end{lstlisting}
 
 % \begin{tcolorbox}
-% 	\mybox{运行结果}
-% 	\begin{verbatim}
+%     \mybox{运行结果}
+%     \begin{verbatim}
 % +------+-------+------+
 % | id   | name  | gpa  |
 % +------+-------+------+
@@ -1280,8 +1266,8 @@
 % \end{lstlisting}
 
 % \begin{tcolorbox}
-% 	\mybox{运行结果}
-% 	\begin{verbatim}
+%     \mybox{运行结果}
+%     \begin{verbatim}
 % +------+-------+------+
 % | id   | name  | gpa  |
 % +------+-------+------+
@@ -1337,8 +1323,8 @@
 % \end{lstlisting}
 
 % \begin{tcolorbox}
-% 	\mybox{运行结果}
-% 	\begin{verbatim}
+%     \mybox{运行结果}
+%     \begin{verbatim}
 % +------+-------+------+
 % | id   | name  | gpa  |
 % +------+-------+------+
@@ -1387,23 +1373,23 @@
 % 通配符是用特殊的字符来表示一个或多个字符，通配符必须和LIKE搭配使用。
 
 % \begin{table}[H]
-% 	\centering
-% 	\setlength{\tabcolsep}{5mm}{
-% 		\begin{tabular}{|c|c|}
-% 			\hline
-% 			\textbf{运算符}  & \textbf{功能}                \\
-% 			\hline
-% 			\%               & 匹配一个或多个字符           \\
-% 			\hline
-% 			\_               & 匹配一个字符                 \\
-% 			\hline
-% 			[char\_list]     & 匹配列表中的任意一个字符     \\
-% 			\hline
-% 			[\^{}char\_list] & 匹配不在列表中的任意一个字符 \\
-% 			\hline
-% 		\end{tabular}
-% 	}
-% 	\caption{通配符}
+%     \centering
+%     \setlength{\tabcolsep}{5mm}{
+%         \begin{tabular}{|c|c|}
+%             \hline
+%             \textbf{运算符}  & \textbf{功能}                \\
+%             \hline
+%             \%               & 匹配一个或多个字符           \\
+%             \hline
+%             \_               & 匹配一个字符                 \\
+%             \hline
+%             [char\_list]     & 匹配列表中的任意一个字符     \\
+%             \hline
+%             [\^{}char\_list] & 匹配不在列表中的任意一个字符 \\
+%             \hline
+%         \end{tabular}
+%     }
+%     \caption{通配符}
 % \end{table}
 
 % 注意，MySQL与PostgreSQL均不支持字符列表通配符，在实际场景中可以使用正则（REGEXP）来替代。 \\
@@ -1419,8 +1405,8 @@
 % \end{lstlisting}
 
 % \begin{tcolorbox}
-% 	\mybox{运行结果}
-% 	\begin{verbatim}
+%     \mybox{运行结果}
+%     \begin{verbatim}
 % +------+-------+------+
 % | id   | name  | gpa  |
 % +------+-------+------+
@@ -1449,8 +1435,8 @@
 % \end{lstlisting}
 
 % \begin{tcolorbox}
-% 	\mybox{运行结果}
-% 	\begin{verbatim}
+%     \mybox{运行结果}
+%     \begin{verbatim}
 % +------+-------+------+
 % | id   | name  | gpa  |
 % +------+-------+------+
@@ -1507,8 +1493,8 @@
 % \end{lstlisting}
 
 % \begin{tcolorbox}
-% 	\mybox{运行结果}
-% 	\begin{verbatim}
+%     \mybox{运行结果}
+%     \begin{verbatim}
 % +------+-------+------+
 % | id   | name  | gpa  |
 % +------+-------+------+
@@ -1538,8 +1524,8 @@
 % \end{lstlisting}
 
 % \begin{tcolorbox}
-% 	\mybox{运行结果}
-% 	\begin{verbatim}
+%     \mybox{运行结果}
+%     \begin{verbatim}
 % +------+-------+------+
 % | id   | name  | gpa  |
 % +------+-------+------+
@@ -1552,5 +1538,895 @@
 % \end{tcolorbox}
 
 % \newpage
+
+% \chapter{UNION}
+
+% \section{初始数据}
+
+% \mybox{初始数据}
+
+% \begin{lstlisting}[language=SQL]
+% DROP TABLE IF EXISTS computer_science;
+
+% CREATE TABLE computer_science(
+% 	id int,
+% 	name varchar(20)
+% );
+
+% INSERT INTO computer_science VALUES
+% (979489, "Terry"),
+% (102387, "Henry");
+
+% DROP TABLE IF EXISTS engineering;
+
+% CREATE TABLE engineering(
+% 	id int,
+% 	name varchar(20)
+% );
+
+% INSERT INTO engineering VALUES
+% (8347201, "Alice"),
+% (979489, "Terry");
+% \end{lstlisting}
+
+% \section{UNION}
+
+% UNION操作符用于合并两个或多个SELECT查询的结果集，UNION合并的结果集必须拥有相同的字段个数，且合并的字段类型必须兼容。
+
+% \vspace{-0.5cm}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT [col] FROM [table_name1]
+% UNION
+% SELECT [col] FROM [table_name2];
+% \end{lstlisting}
+
+% UNION在合并两个结果集时，会默认去掉重复值，如果需要保留重复的记录就需要使用UNION ALL。 \\
+
+% \mybox{查询获取computer\_science和engineering表中的所有学生}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT id, name FROM computer_science
+% UNION
+% SELECT id, name FROM engineering;
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +---------+-------+
+% | id      | name  |
+% +---------+-------+
+% |  979489 | Terry |
+% |  102387 | Henry |
+% | 8347201 | Alice |
+% +---------+-------+
+%     \end{verbatim}
+% \end{tcolorbox}
+
+% \newpage
+
+% \chapter{date \& time}
+
+% \section{date \& time}
+
+% date用于存储日期类数据，日期的有效值范围在1000-01-01 $ \sim $ 9999-12-32之间。 \\
+
+% time用于存储时间类数据，时间的范围在-838:59:59.000000 $ \sim $ 838:59:59.000000之间，有效值在00:00:00 $ \sim $ 23:59:59之间。 \\
+
+% timestamp用来存储时间戳数据，不仅可以保存日期数据，还可以保存时间数据。SQL中提供了now()用于生成当前时间戳。 \\
+
+% SQL标准中时间和日期的数据类型主要包括date、time和timestamp，不过在不同数据库中会有所不同，如MySQL中还支持datetime来融合date和time；而在SQL Server中不支持timestamp类型，仅支持datetime类型。 \\
+
+% \mybox{创建exam日期表}
+
+% \begin{lstlisting}[language=SQL]
+% DROP TABLE IF EXISTS exam;
+
+% CREATE TABLE exam(
+% 	course_name varchar(30),
+% 	exam_date date,
+% 	exam_time time
+% );
+
+% INSERT INTO exam VALUES
+% ("Data Structure", "2021-09-13", "15:30:00"),
+% ("Database", "2021-10-04", "10:20:00"),
+% ("Software Engineering", "2021-09-14", "18:45:00");
+
+% SELECT * FROM exam;
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +----------------------+------------+-----------+
+% | course_name          | exam_date  | exam_time |
+% +----------------------+------------+-----------+
+% | Data Structure       | 2021-09-13 | 15:30:00  |
+% | Database             | 2021-10-04 | 10:20:00  |
+% | Software Engineering | 2021-09-14 | 18:45:00  |
+% +----------------------+------------+-----------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% \newpage
+
+% \chapter{PRIMARY KEY \& FOREIGN KEY}
+
+% \section{PRIMARY KEY}
+
+% 主键PRIMARY KEY是数据表中每条记录唯一的标识，每一张表都应有一个主键，主键只能有一个，且不能为空。 \\
+
+% 我们通常在每次插入新记录时，自动创建主键字段的值。AUTO\_INCREMENT关键字可以实现字段的自增，默认值为1，每条新记录递增1。不同的数据库对于自增的支持是不同的，有些数据库甚至不支持自增主键。 \\
+
+% \mybox{创建student\_info表，设置id为主键，添加AUTO\_INCREMENT约束}
+
+% \begin{lstlisting}[language=SQL]
+% DROP TABLE IF EXISTS student_info;
+% CREATE TABLE student_info(
+% 	id int unsigned PRIMARY KEY AUTO_INCREMENT,
+% 	name varchar(20)
+% );
+% DESC student_info;
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +------+-------------+-----+----+--------+---------------+
+% |Field |Type         |Null |Key |Default |Extra          |
+% +------+-------------+-----+----+--------+---------------+
+% |id    |int unsigned |NO   |PRI | NULL   |auto_increment |
+% |name  |varchar(20)  |YES  |    | NULL   |               |
+% +------+-------------+-----+----+--------+---------------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% \section{FOREIGN KEY}
+
+% 对于关系数据库，最核心的东西莫过于关系二字。在开发中，表A的主键一般会作为表B的外键，用来表示表A与表B之间的关系。 \\
+
+% 外键FOREIGN KEY用来表示表与表之间的关系，一般使用另一张表的主键作为外键。
+
+% \vspace{-0.5cm}
+
+% \begin{lstlisting}[language=SQL]
+% FOREIGN KEY ([col1]) REFERENCES [table_name]([col2])
+% \end{lstlisting}
+
+% \vspace{0.5cm}
+
+% \mybox{创建gpa\_info表，设置student\_id为外键，关键student\_info表的id}
+
+% \begin{lstlisting}[language=SQL]
+% DROP TABLE IF EXISTS gpa_info;
+
+% CREATE TABLE gpa_info(
+%     id int unsigned PRIMARY KEY AUTO_INCREMENT,
+%     gpa double(5, 2),
+%     student_id int unsigned,
+%     FOREIGN KEY (student_id) REFERENCES student_info(id)
+% );
+
+% DESC gpa_info;
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +-----------+-------------+-----+----+--------+---------------+
+% |Field      |Type         |Null |Key |Default |Extra          |
+% +-----------+-------------+-----+----+--------+---------------+
+% |id         |int unsigned |NO   |PRI |NULL    |auto_increment |
+% |gpa        |double(5,2)  |YES  |    |NULL    |               |
+% |student_id |int unsigned |YES  |MUL |NULL    |               |
+% +-----------+-------------+-----+----+--------+---------------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% \newpage
+
+% \chapter{JOIN}
+
+% \section{初始数据}
+
+% \mybox{初始数据}
+
+% \begin{lstlisting}[language=SQL]
+% DROP TABLE IF EXISTS course;
+
+% CREATE TABLE course(
+%     id int PRIMARY KEY,
+%     name varchar(30)
+% );
+
+% INSERT INTO course VALUES
+% (1500, "Introduction to C"),
+% (2520, "Data Structure"),
+% (3110, "Operating System");
+
+% DROP TABLE IF EXISTS student;
+
+% CREATE TABLE student(
+%     id int PRIMARY KEY,
+%     name varchar(20),
+%     course_id int REFERENCES course(id)
+% );
+
+% INSERT INTO student VALUES
+% (979489, "Terry", 2520),
+% (102453, "Lily", 1500),
+% (919342, "Henry", 2520),
+% (235472, "Eric", NULL);
+% \end{lstlisting}
+
+% \section{JOIN}
+
+% JOIN语句用于将数据库中的两个或多个表组合起来，连接操作是关系数据库中体现“关系”的核心指令，常用于合并拥有关联关系的两表或者多表，并从中获取数据。 \\
+
+% 连接操作是使用外键最主要的方式，通过连接可以将两个或多个拥有外键关联的数据表的数据进行合并，然后选择需要的数据字段。 \\
+
+% SQL有五种连接方式：
+
+% \begin{itemize}
+%     \item 交叉连接（CROSS JOIN）
+%     \item 内连接（INNER JOIN）
+%     \item 全外连接（FULL OUTER JOIN）
+%     \item 左外连接（LEFT OUTER JOIN）
+%     \item 右外连接（RIGHT OUTER JOIN）
+% \end{itemize}
+
+% \section{交叉连接}
+
+% 交叉连接CROSS JOIN，又称笛卡尔连接（Cartesian Join），其作用是返回两表的笛卡尔积。 \\
+
+% 交叉连接可对任意两表进行连接，即使两表之间不存在关联关系。交叉连接就是将一张表的每一条记录与另一张表的每一条记录进行连接成为一条新记录，排列组合完毕后得到两张表的笛卡尔积。 \\
+
+% \mybox{获取student和course两表的笛卡尔积}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT * FROM student CROSS JOIN course;
+% # 交叉连接还可以通过隐式的连接方式实现
+% # SELECT * FROM student, course;
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +--------+-------+-----------+------+-------------------+
+% | id     | name  | course_id | id   | name              |
+% +--------+-------+-----------+------+-------------------+
+% | 102453 | Lily  |      1500 | 3110 | Operating System  |
+% | 102453 | Lily  |      1500 | 2520 | Data Structure    |
+% | 102453 | Lily  |      1500 | 1500 | Introduction to C |
+% | 235472 | Eric  |      NULL | 3110 | Operating System  |
+% | 235472 | Eric  |      NULL | 2520 | Data Structure    |
+% | 235472 | Eric  |      NULL | 1500 | Introduction to C |
+% | 919342 | Henry |      2520 | 3110 | Operating System  |
+% | 919342 | Henry |      2520 | 2520 | Data Structure    |
+% | 919342 | Henry |      2520 | 1500 | Introduction to C |
+% | 979489 | Terry |      2520 | 3110 | Operating System  |
+% | 979489 | Terry |      2520 | 2520 | Data Structure    |
+% | 979489 | Terry |      2520 | 1500 | Introduction to C |
+% +--------+-------+-----------+------+-------------------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% \section{内连接}
+
+% 内连接INNER JOIN是将一张表的每一条记录与另一张表的每一行记录进行比较，得到两张表匹配的记录集合。 \\
+
+% \begin{figure}[H]
+%     \centering
+%     \begin{tikzpicture}[thick, set/.style = {circle, minimum size = 3cm, fill=MidnightBlue!50}]
+%         \node[set,label={135:$A$}] (A) at (0,0) {};
+%         \node[set,label={45:$B$}] (B) at (1.8,0) {};
+
+%         \begin{scope}
+%             \clip (0,0) circle(1.5cm);
+%             \clip (1.8,0) circle(1.5cm);
+%             \fill[Dandelion](0,0) circle(1.5cm);
+%         \end{scope}
+
+%         \draw (0,0) circle(1.5cm);
+%         \draw (1.8,0) circle(1.5cm);
+%     \end{tikzpicture}
+%     \caption{内连接}
+% \end{figure}
+
+% \mybox{获取student和course两表的内连接集合}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT * FROM student INNER JOIN course
+% ON student.course_id = course.id;
+
+% # 内连接是默认的连接方式，因此可以省略INNER关键字
+% # SELECT * FROM student JOIN course
+% # ON student.course_id = course.id;
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +--------+-------+-----------+------+-------------------+
+% | id     | name  | course_id | id   | name              |
+% +--------+-------+-----------+------+-------------------+
+% | 102453 | Lily  |      1500 | 1500 | Introduction to C |
+% | 919342 | Henry |      2520 | 2520 | Data Structure    |
+% | 979489 | Terry |      2520 | 2520 | Data Structure    |
+% +--------+-------+-----------+------+-------------------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% \section{左外连接}
+
+% 若A和B两表进行左外连接，会在结果中包含左表（A）的所有记录，即使那些记录在右表（B） 没有符合连接条件相应的匹配记录，未匹配的记录会给予NULL填充。 \\
+
+% \begin{figure}[H]
+%     \centering
+%     \begin{tikzpicture}[thick, set/.style = { circle, minimum size = 3cm}]
+%         \node[set,fill=OliveGreen,label={135:$A$}] (A) at (0,0) {};
+%         \node[set,label={45:$B$}] (B) at (0:2) {};
+%         \draw (0,0) circle(1.5cm);
+%         \draw (2,0) circle(1.5cm);
+%     \end{tikzpicture}
+%     \caption{左外连接}
+% \end{figure}
+
+% \mybox{查询stundent表中每一个学生和该学生所选的课程}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT student.name AS student_name, course.name AS course_name
+% FROM student LEFT OUTER JOIN course
+% ON student.course_id = course.id;
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +--------------+-------------------+
+% | student_name | course_name       |
+% +--------------+-------------------+
+% | Lily         | Introduction to C |
+% | Eric         | NULL              |
+% | Henry        | Data Structure    |
+% | Terry        | Data Structure    |
+% +--------------+-------------------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% \section{右外连接}
+
+% 若A和B两表进行右外连接，会在结果中包含右表（ B）的所有记录，即使那些记录在左表（A）中没有符合连接条件相应的匹配记录，未匹配的记录会给予NULL填充。 \\
+
+% \begin{figure}[H]
+%     \centering
+%     \begin{tikzpicture}[thick, set/.style = { circle, minimum size = 3cm}]
+%         \node[set,fill=OliveGreen,label={45:$B$}] (B) at (0:2) {};
+%         \node[set,label={135:$A$}] (A) at (0,0) {};
+%         \draw (0,0) circle(1.5cm);
+%         \draw (2,0) circle(1.5cm);
+%     \end{tikzpicture}
+%     \caption{右外连接}
+% \end{figure}
+
+% \mybox{查询course表中每一门课和该课程下参与的学生}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT course.name AS course_name, student.name AS student_name
+% FROM student RIGHT OUTER JOIN course
+% ON course.id = student.course_id;
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +-------------------+--------------+
+% | course_name       | student_name |
+% +-------------------+--------------+
+% | Introduction to C | Lily         |
+% | Data Structure    | Terry        |
+% | Data Structure    | Henry        |
+% | Operating System  | NULL         |
+% +-------------------+--------------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% SQLite是不支持右连接的，却可以通过更换保留表的位置用左连接来模拟右连接。
+
+% \section{全连接}
+
+% 全连接是左、右外连接的并集，查询结果会包含被连接表的所有记录，若缺少匹配的记录，将以NULL填充。 \\
+
+% \begin{figure}[H]
+%     \centering
+%     \begin{tikzpicture}
+%         \node [circle, fill=orange, minimum size=3cm, label={135:$A$}] (A) at (0,0){};
+%         \node [circle,
+%             fill=orange,
+%             minimum size =3cm,
+%             label={45:$B$}] (B) at (1.8,0){};
+%         \draw[white,thick] (0,0) circle(1.5cm);
+%         \draw[white,thick] (1.8,0) circle(1.5cm);
+%     \end{tikzpicture}
+%     \caption{全连接}
+% \end{figure}
+
+% \mybox{获取course和student两表的全连接}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT * FROM course FULL OUTER JOIN student
+% ON course.id = student.course_id;
+% \end{lstlisting}
+
+% 一些数据库，比如MySQL是不支持全连接的，但可以通过左、右外连接的并集来模拟实现。 \\
+
+% \mybox{MySQL模拟实现全连接}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT * FROM student LEFT JOIN course
+% ON course.id = student.course_id
+% UNION
+% SELECT * FROM student RIGHT JOIN course
+% ON course.id = student.course_id;
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +--------+-------+-----------+------+-------------------+
+% | id     | name  | course_id | id   | name              |
+% +--------+-------+-----------+------+-------------------+
+% | 102453 | Lily  |      1500 | 1500 | Introduction to C |
+% | 235472 | Eric  |      NULL | NULL | NULL              |
+% | 919342 | Henry |      2520 | 2520 | Data Structure    |
+% | 979489 | Terry |      2520 | 2520 | Data Structure    |
+% |   NULL | NULL  |      NULL | 3110 | Operating System  |
+% +--------+-------+-----------+------+-------------------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% \section{自连接}
+
+% 自连接（self join）是一种特殊的连接方式，指的是与自身进行连接。自连接对于别名的要求是必须的，否则解析引擎无法判断出二者之间的关系。 \\
+
+% \mybox{查询employee表中薪资超期其领导的员工}
+
+% \begin{lstlisting}[language=SQL]
+% DROP DATABASE IF EXISTS employment;
+% CREATE DATABASE employment;
+% USE employment;
+
+% CREATE TABLE employee(
+%     id int unsigned PRIMARY KEY AUTO_INCREMENT,
+%     name varchar(20),
+%     salary decimal(8, 2),
+%     manager_id int unsigned
+% );
+
+% INSERT INTO employee VALUES
+% (1, "Terry", 9000, 3),
+% (2, "Eric", 8500, 4),
+% (3, "Henry", 8700, NULL),
+% (4, "Alice", 8900, NULL);
+
+% SELECT a.name
+% FROM employee AS a
+% JOIN employee AS b
+% ON a.manager_id = b.id
+% WHERE a.salary > b.salary;
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +-------+
+% | name  |
+% +-------+
+% | Terry |
+% +-------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% \newpage
+
+% \chapter{GROUP BY \& HAVING}
+
+% \section{初始数据}
+
+% \mybox{初始数据}
+
+% \begin{lstlisting}[language=SQL]
+% DROP TABLE IF EXISTS info;
+
+% CREATE TABLE info(
+%     id int unsigned PRIMARY KEY AUTO_INCREMENT,
+%     name varchar(20),
+%     age int unsigned CHECK(age > 0)
+% );
+
+% INSERT INTO info VALUES
+% (1, "Terry", 23),
+% (2, "Henry", 22),
+% (3, "Lily", 23),
+% (4, "Eric", 18);
+% \end{lstlisting}
+
+% \section{GROUP BY}
+
+% GROUP BY用于数据分组，一般与聚合函数一起使用。GROUP BY会根据数据字段来分组，并且根据给定的聚合函数对分组进行聚合操作。
+
+% \vspace{-0.5cm}
+
+% \begin{lstlisting}[language=SQL]
+% # [agg]表示聚合函数
+% SELECT [agg] FROM [table_name] GROUP BY [col];
+% \end{lstlisting}
+
+% \vspace{0.5cm}
+
+% \mybox{将info表中的学生根据age进行分组，打印每个分组的学生数}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT name, COUNT(*) FROM info GROUP BY age;
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +-------+----------+
+% | name  | COUNT(*) |
+% +-------+----------+
+% | Terry |        2 |
+% | Henry |        1 |
+% | Eric  |        1 |
+% +-------+----------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% MySQL若出现ERROR 1055 (42000)，需要关闭ONLY\_FULL\_GROUP\_BY选项。
+
+% \vspace{-0.5cm}
+
+% \begin{lstlisting}[language=SQL, breaklines=true, breakatwhitespace=false]
+% set sql_mode='STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+% \end{lstlisting}
+
+% \section{HAVING}
+
+% 由于WHERE无法与聚合函数一起搭配使用，因此SQL增加HAVING指令。HAVING本身并无其他含义，它的主要功能是替代WHERE。 \\
+
+% HAVING不能单独出现，必须与聚合函数搭配使用，且常与GROUP BY一起出现。
+
+% \vspace{-0.5cm}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT [agg] FROM [table_name]
+% GROUP BY [col] HAVING [condition];
+% \end{lstlisting}
+
+% \vspace{0.5cm}
+
+% \mybox{将info表中的学生根据age进行分组，打印大于20岁的每个分组人数}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT age, COUNT(*) FROM info
+% GROUP BY age HAVING age > 20;
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +------+----------+
+% | age  | COUNT(*) |
+% +------+----------+
+% |   23 |        2 |
+% |   22 |        1 |
+% +------+----------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% \newpage
+
+% \chapter{子查询}
+
+% \section{初始数据}
+
+% \mybox{初始数据}
+
+% \begin{lstlisting}[language=SQL]
+% DROP TABLE IF EXISTS info;
+
+% CREATE TABLE info(
+%     id int unsigned PRIMARY KEY AUTO_INCREMENT,
+%     name varchar(20),
+%     gpa double(5, 2)
+% );
+
+% INSERT INTO info VALUES
+% (1, "Terry", 3.8),
+% (2, "Lily", 4.2),
+% (3, "Eric", 3.4),
+% (4, "Henry", 3.8);
+% \end{lstlisting}
+
+% \section{子查询}
+
+% 子查询又称嵌套查询，是种嵌套在其它SQL查询的WHERE子句中的查询。SQL子查询是一种复杂的查询方式，一般子查询语句都可以被分为主查询部分和子查询部分。子查询部分为主查询部分服务，常用于为主查询返回其所需数据，或者进一步筛选主查询数据。 \\
+
+% \mybox{获取info表中小于gpa最高分的所有学生}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT name FROM info
+% WHERE gpa <
+% (SELECT gpa FROM info ORDER BY gpa DESC LIMIT 1);
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +-------+
+% | name  |
+% +-------+
+% | Terry |
+% | Eric  |
+% | Henry |
+% +-------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% \vspace{0.5cm}
+
+% \mybox{将info表中gpa大于3.5分的学生gpa增加0.1}
+
+% \begin{lstlisting}[language=SQL]
+% UPDATE info SET gpa = gpa + 0.1
+% WHERE id IN
+% (SELECT id FROM info WHERE gpa > 3.5);
+
+% SELECT * FROM info;
+% \end{lstlisting}
+
+% MySQL中不支持在同一张表中查询又更新，因此需要改写SQL语句使其支持。 \\
+
+% \mybox{MySQL中实现将info表中gpa大于3.5分的学生gpa增加0.1}
+
+% \begin{lstlisting}[language=SQL]
+% UPDATE info SET gpa = gpa + 0.1
+% WHERE id IN (
+% SELECT a.id FROM
+% (SELECT id FROM info WHERE gpa > 3.5)
+% AS a
+% );
+
+% SELECT * FROM info;
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +----+-------+------+
+% | id | name  | gpa  |
+% +----+-------+------+
+% |  1 | Terry | 3.90 |
+% |  2 | Lily  | 4.30 |
+% |  3 | Eric  | 3.40 |
+% |  4 | Henry | 3.90 |
+% +----+-------+------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% \newpage
+
+% \chapter{ANY \& ALL}
+
+% \section{初始数据}
+
+% \mybox{初始数据}
+
+% \begin{lstlisting}[language=SQL]
+% DROP TABLE IF EXISTS class_1;
+
+% CREATE TABLE class_1(
+%     id int unsigned PRIMARY KEY AUTO_INCREMENT,
+%     name varchar(20),
+%     gpa double(5, 2)
+% );
+
+% INSERT INTO class_1 VALUES
+% (1, "Terry", 3.8),
+% (2, "Lily", 4.2),
+% (3, "Henry", 3.2);
+
+% DROP TABLE IF EXISTS class_2;
+
+% CREATE TABLE class_2(
+%     id int unsigned PRIMARY KEY AUTO_INCREMENT,
+%     name varchar(20),
+%     gpa double(5, 2)
+% );
+
+% INSERT INTO class_2 VALUES
+% (1, "Eric", 3.4),
+% (2, "Alce", 4.2),
+% (3, "Shawn", 3.5);
+% \end{lstlisting}
+
+% \section{ANY \& ALL}
+
+% 如果子查询返回多条记录，那么主查询部分只能使用多值比较符（如IN），对于单值比较符（如【>】）则无法工作。 \\
+
+% ANY和ALL主要解决子查询返回多条记录而主查询需要使用单值比较符的问题。
+
+% \begin{table}[H]
+%     \centering
+%     \setlength{\tabcolsep}{5mm}{
+%         \begin{tabular}{|c|c|}
+%             \hline
+%             \textbf{指令} & \textbf{功能}                        \\
+%             \hline
+%             ANY           & 子查询结果集任一条记录满足比较符即可 \\
+%             \hline
+%             ALL           & 子查询结果集所有记录满足比较符才可   \\
+%             \hline
+%         \end{tabular}
+%     }
+%     \caption{ANY \& ALL}
+% \end{table}
+
+% \mybox{查询class\_1中gpa低于class\_2中任意一个的同学}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT name, gpa FROM class_1
+% WHERE gpa < ANY
+% (SELECT gpa FROM class_2);
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +-------+------+
+% | name  | gpa  |
+% +-------+------+
+% | Terry | 3.80 |
+% | Henry | 3.20 |
+% +-------+------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% \vspace{0.5cm}
+
+% \mybox{查询class\_1中gpa低于class\_2中所有人的同学}
+
+% \begin{lstlisting}[language=SQL]
+% SELECT name, gpa FROM class_1
+% WHERE gpa < ALL
+% (SELECT gpa FROM class_2);
+% \end{lstlisting}
+
+% \begin{tcolorbox}
+%     \mybox{运行结果}
+%     \begin{verbatim}
+% +-------+------+
+% | name  | gpa  |
+% +-------+------+
+% | Henry | 3.20 |
+% +-------+------+
+% 	\end{verbatim}
+% \end{tcolorbox}
+
+% \newpage
+
+\chapter{事务}
+
+\section{事务（Transaction）}
+
+事务是数据库中的核心概念，指的是将数据库的一组操作作为一个整体，要么全部执行，要么都不执行。并不是每个数据库引擎都支持事务，如MySQL的MyISAM引擎就不支持事务。 \\
+
+事务具有四大特性，即ACID：
+
+\begin{enumerate}
+    \item 原子性（atomicity）：每个事务都是一个整体，不可再拆分，事务中的操作要么全部执行成功，要么全部失败。
+
+    \item 一致性（consistency）：事务执行前后数据库的状态必须保持一致。如 A 转账给 B，转账后金额的总数是不变的。
+
+    \item 隔离性（isolation）：事务与事务之间互不影响，彼此隔离。
+
+    \item 持久性（durability）：事务一旦提交成功，对数据库的更改就是永久的，即使出现了其它情况，数据改变仍然存在。
+\end{enumerate}
+
+事务的四大特性是事务最本质的特点，在这四个特性中，原子性是基础，隔离性是手段，一致性是约束条件，持久性是目的。
+
+\begin{table}[H]
+    \centering
+    \setlength{\tabcolsep}{5mm}{
+        \begin{tabular}{|l|l|}
+            \hline
+            \textbf{事务控制语句}             & \textbf{功能}      \\
+            \hline
+            START TRANSACTION或BEGIN          & 显式地开始一个事务 \\
+            \hline
+            COMMIT                            & 提交事务           \\
+            \hline
+            SAVEPOINT                         & 创建保存点         \\
+            \hline
+            ROLLBACK或ROLLBACK TO [SAVEPOINT] & 回滚事务           \\
+            \hline
+            RELEASE SAVEPOINT                 & 删除保存点         \\
+            \hline
+            SET TRANSACTION                   & 设置事务的隔离级别 \\
+            \hline
+        \end{tabular}
+    }
+    \caption{事务控制语句}
+\end{table}
+
+
+
+\mybox{}
+
+\begin{lstlisting}[language=SQL]
+
+\end{lstlisting}
+
+\begin{tcolorbox}
+    \mybox{运行结果}
+    \begin{verbatim}
+
+	\end{verbatim}
+\end{tcolorbox}
+
+\mybox{}
+
+\begin{lstlisting}[language=SQL]
+
+\end{lstlisting}
+
+\begin{tcolorbox}
+    \mybox{运行结果}
+    \begin{verbatim}
+
+	\end{verbatim}
+\end{tcolorbox}
+
+\mybox{}
+
+\begin{lstlisting}[language=SQL]
+
+\end{lstlisting}
+
+\begin{tcolorbox}
+    \mybox{运行结果}
+    \begin{verbatim}
+
+	\end{verbatim}
+\end{tcolorbox}
+
+\mybox{}
+
+\begin{lstlisting}[language=SQL]
+
+\end{lstlisting}
+
+\begin{tcolorbox}
+    \mybox{运行结果}
+    \begin{verbatim}
+
+	\end{verbatim}
+\end{tcolorbox}
+
+\mybox{}
+
+\begin{lstlisting}[language=SQL]
+
+\end{lstlisting}
+
+\begin{tcolorbox}
+    \mybox{运行结果}
+    \begin{verbatim}
+
+	\end{verbatim}
+\end{tcolorbox}
 
 \end{document}
