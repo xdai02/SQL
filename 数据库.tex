@@ -100,12 +100,10 @@
 \thispagestyle{empty}
 
 \begin{tikzpicture}[overlay,remember picture]
-	% Background color
 	\fill[
 		black!2]
 	(current page.south west) rectangle (current page.north east);
 
-	% Rectangles
 	\shade[
 		left color=Dandelion,
 		right color=Dandelion!40,
@@ -365,13 +363,13 @@ MySQL安装步骤：
 
 \subsubsection{路径配置}
 
-修改本地PATH环境属性，添加MySQL可执行文件路径。\\
+修改本地PATH环境属性，添加MySQL可执行文件路径。
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C2/3.png}
-	\caption{路径配置}
-\end{figure}
+\vspace{-0.5cm}
+
+\begin{lstlisting}
+C:\mysql8\bin
+\end{lstlisting}
 
 \subsubsection{数据目录}
 
@@ -380,12 +378,6 @@ MySQL所提供的仅仅是一个软件支持，但是数据库本身一定需要
 \subsubsection{MySQL配置}
 
 通过配置文件my.ini建立C:$ \backslash $mysql8和D:$ \backslash $mysql-dc两个目录之间的联系。\\
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[]{img/C2/4.png}
-	\caption{MySQL配置}
-\end{figure}
 
 \mybox{创建my.ini文件}
 
@@ -437,7 +429,7 @@ mysqld --initialize --console
 
 \begin{tcolorbox}
 	\mybox{临时密码}
-\begin{verbatim}
+	\begin{verbatim}
 ah+K3SB2,B(B
 	\end{verbatim}
 \end{tcolorbox}
@@ -507,7 +499,7 @@ SHOW DATABASES;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +--------------------+
 | Database           |
 +--------------------+
@@ -592,7 +584,7 @@ DESC info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-------+-------------+------+-----+---------+-------+
 | Field | Type        | Null | Key | Default | Extra |
 +-------+-------------+------+-----+---------+-------+
@@ -679,7 +671,7 @@ DESC info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-------+-------------+------+-----+---------+-------+
 | Field | Type        | Null | Key | Default | Extra |
 +-------+-------------+------+-----+---------+-------+
@@ -716,7 +708,7 @@ DESC info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-------+--------------+------+-----+---------+-------+
 | Field | Type         | Null | Key | Default | Extra |
 +-------+--------------+------+-----+---------+-------+
@@ -731,7 +723,7 @@ DESC info;
 
 \chapter{ALTER}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -778,7 +770,7 @@ DESC info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-------+-------------+------+-----+---------+-------+
 | Field | Type        | Null | Key | Default | Extra |
 +-------+-------------+------+-----+---------+-------+
@@ -818,7 +810,7 @@ TRUNCATE TABLE [table_name];
 
 \chapter{INSERT}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -867,7 +859,7 @@ SELECT * FROM info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +------+-------+------+
 | id   | name  | gpa  |
 +------+-------+------+
@@ -901,7 +893,7 @@ SELECT * FROM info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +------+-------+------+
 | id   | name  | gpa  |
 +------+-------+------+
@@ -916,7 +908,7 @@ SELECT * FROM info;
 
 \chapter{SELECT}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -955,7 +947,7 @@ SELECT current_user;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-----------+
 | version() |
 +-----------+
@@ -1000,7 +992,7 @@ SELECT name, gpa FROM info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-------+------+
 | name  | gpa  |
 +-------+------+
@@ -1042,7 +1034,7 @@ SELECT name AS student_name, gpa FROM info LIMIT 4;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +--------------+------+
 | student_name | gpa  |
 +--------------+------+
@@ -1076,7 +1068,7 @@ SELECT DISTINCT name, gpa FROM info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-------+------+
 | name  | gpa  |
 +-------+------+
@@ -1132,7 +1124,7 @@ SELECT * from info WHERE gpa >= 3.3 AND gpa <= 3.6;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +------+-------+------+
 | id   | name  | gpa  |
 +------+-------+------+
@@ -1146,7 +1138,7 @@ SELECT * from info WHERE gpa >= 3.3 AND gpa <= 3.6;
 
 \chapter{ORDER BY}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -1199,7 +1191,7 @@ SELECT * FROM info ORDER BY gpa DESC, id ASC;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +------+-------+------+
 | id   | name  | gpa  |
 +------+-------+------+
@@ -1219,7 +1211,7 @@ SELECT * FROM info ORDER BY gpa DESC, id ASC;
 
 \chapter{UPDATE}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -1265,7 +1257,7 @@ SELECT * FROM info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +------+-------+------+
 | id   | name  | gpa  |
 +------+-------+------+
@@ -1280,7 +1272,7 @@ SELECT * FROM info;
 
 \chapter{DELETE}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -1324,7 +1316,7 @@ SELECT * FROM info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +------+-------+------+
 | id   | name  | gpa  |
 +------+-------+------+
@@ -1338,7 +1330,7 @@ SELECT * FROM info;
 
 \chapter{LIKE \& REGEXP}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -1408,7 +1400,7 @@ SELECT * FROM info WHERE name LIKE "_e%y";
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +------+-------+------+
 | id   | name  | gpa  |
 +------+-------+------+
@@ -1440,7 +1432,7 @@ SELECT * FROM info WHERE name REGEXP "^[AEIOUaeiou]";
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +------+-------+------+
 | id   | name  | gpa  |
 +------+-------+------+
@@ -1455,7 +1447,7 @@ SELECT * FROM info WHERE name REGEXP "^[AEIOUaeiou]";
 
 \chapter{BETWEEN \& IN}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -1500,7 +1492,7 @@ SELECT * FROM info WHERE gpa BETWEEN 3.7 AND 4.1;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +------+-------+------+
 | id   | name  | gpa  |
 +------+-------+------+
@@ -1533,7 +1525,7 @@ SELECT * FROM info WHERE gpa NOT IN (3.3, 4.2);
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +------+-------+------+
 | id   | name  | gpa  |
 +------+-------+------+
@@ -1549,7 +1541,7 @@ SELECT * FROM info WHERE gpa NOT IN (3.3, 4.2);
 
 \chapter{UNION}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -1603,7 +1595,7 @@ SELECT id, name FROM engineering;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +---------+-------+
 | id      | name  |
 +---------+-------+
@@ -1649,7 +1641,7 @@ SELECT * FROM exam;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +----------------------+------------+-----------+
 | course_name          | exam_date  | exam_time |
 +----------------------+------------+-----------+
@@ -1683,7 +1675,7 @@ DESC student_info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +------+-------------+-----+----+--------+---------------+
 |Field |Type         |Null |Key |Default |Extra          |
 +------+-------------+-----+----+--------+---------------+
@@ -1726,7 +1718,7 @@ DESC gpa_info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-----------+-------------+-----+----+--------+---------------+
 |Field      |Type         |Null |Key |Default |Extra          |
 +-----------+-------------+-----+----+--------+---------------+
@@ -1741,7 +1733,7 @@ DESC gpa_info;
 
 \chapter{JOIN}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -1807,7 +1799,7 @@ SELECT * FROM student CROSS JOIN course;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +--------+-------+-----------+------+-------------------+
 | id     | name  | course_id | id   | name              |
 +--------+-------+-----------+------+-------------------+
@@ -1864,7 +1856,7 @@ ON student.course_id = course.id;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +--------+-------+-----------+------+-------------------+
 | id     | name  | course_id | id   | name              |
 +--------+-------+-----------+------+-------------------+
@@ -1902,7 +1894,7 @@ ON student.course_id = course.id;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +--------------+-------------------+
 | student_name | course_name       |
 +--------------+-------------------+
@@ -1941,7 +1933,7 @@ ON course.id = student.course_id;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-------------------+--------------+
 | course_name       | student_name |
 +-------------------+--------------+
@@ -1994,7 +1986,7 @@ ON course.id = student.course_id;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +--------+-------+-----------+------+-------------------+
 | id     | name  | course_id | id   | name              |
 +--------+-------+-----------+------+-------------------+
@@ -2042,7 +2034,7 @@ WHERE a.salary > b.salary;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-------+
 | name  |
 +-------+
@@ -2055,7 +2047,7 @@ WHERE a.salary > b.salary;
 
 \chapter{GROUP BY \& HAVING}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -2098,7 +2090,7 @@ SELECT name, COUNT(*) FROM info GROUP BY age;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-------+----------+
 | name  | COUNT(*) |
 +-------+----------+
@@ -2143,7 +2135,7 @@ GROUP BY age HAVING age > 20;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +------+----------+
 | age  | COUNT(*) |
 +------+----------+
@@ -2157,7 +2149,7 @@ GROUP BY age HAVING age > 20;
 
 \chapter{子查询}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -2193,7 +2185,7 @@ WHERE gpa <
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-------+
 | name  |
 +-------+
@@ -2233,7 +2225,7 @@ SELECT * FROM info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +----+-------+------+
 | id | name  | gpa  |
 +----+-------+------+
@@ -2249,7 +2241,7 @@ SELECT * FROM info;
 
 \chapter{ANY \& ALL}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -2315,7 +2307,7 @@ WHERE gpa < ANY
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-------+------+
 | name  | gpa  |
 +-------+------+
@@ -2337,7 +2329,7 @@ WHERE gpa < ALL
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-------+------+
 | name  | gpa  |
 +-------+------+
@@ -2423,7 +2415,7 @@ B获取到了如下信息：
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +----+-------+------+
 | id | name  | gpa  |
 +----+-------+------+
@@ -2446,7 +2438,7 @@ SELECT * FROM info WHERE id = 4;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +----+-------+------+
 | id | name  | gpa  |
 +----+-------+------+
@@ -2474,7 +2466,7 @@ SELECT * FROM info WHERE id = 4;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +----+-------+------+
 | id | name  | gpa  |
 +----+-------+------+
@@ -2506,7 +2498,7 @@ SELECT * FROM info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +----+-------+------+
 | id | name  | gpa  |
 +----+-------+------+
@@ -2566,7 +2558,7 @@ SET SESSION TRANSACTION ISOLATION LEVEL [level];
 
 \chapter{INDEX}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -2612,7 +2604,7 @@ SELECT * FROM info WHERE gpa = 3.8;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +----+-------+------+
 | id | name  | gpa  |
 +----+-------+------+
@@ -2626,7 +2618,7 @@ SELECT * FROM info WHERE gpa = 3.8;
 
 \chapter{VIEW}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -2682,7 +2674,7 @@ SELECT * FROM student_shortcut_view;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +-------+------+
 | name  | gpa  |
 +-------+------+
@@ -2775,7 +2767,7 @@ SELECT * FROM [table_name] WHERE [condition] FOR UPDATE;
 
 \chapter{函数}
 
-\section{初始数据}
+\vspace{0.5cm}
 
 \mybox{初始数据}
 
@@ -2940,7 +2932,7 @@ FROM info;
 
 \begin{tcolorbox}
 	\mybox{运行结果}
-\begin{verbatim}
+	\begin{verbatim}
 +---------+---------+---------+---------+-------------------+
 |COUNT(*) |SUM(gpa) |MAX(gpa) |MIN(gpa) |ROUND(AVG(gpa), 2) |
 +---------+---------+---------+---------+-------------------+
