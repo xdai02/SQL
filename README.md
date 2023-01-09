@@ -1,26 +1,26 @@
 # 数据库
 
-- 第1节：数据库简介
-- 第2节：MySQL安装配置
-- 第3节：CREATE
-- 第4节：ALTER
-- 第5节：DROP
-- 第6节：INSERT
-- 第7节：SELECT
-- 第8节：ORDER BY
-- 第9节：UPDATE
-- 第10节：DELETE
-- 第11节：LIKE & REGEXP
-- 第12节：BETWEEN & IN
-- 第13节：UNION
-- 第14节：date & time
-- 第15节：PRIMARY KEY & FOREIGN KEY
-- 第16节：JOIN
-- 第17节：GROUP BY & HAVING
-- 第18节：子查询
-- 第19节：ANY & ALL
-- 第20节：事物
-- 第21节：INDEX
-- 第22节：VIEW
-- 第23节：锁
-- 第24节：函数
+1. 数据库简介
+2. MySQL安装配置
+3. CREATE
+4. ALTER
+5. DROP
+6. INSERT
+7. SELECT
+8. ORDER BY
+9. UPDATE
+10. DELETE
+11. LIKE & REGEXP
+12. BETWEEN & IN
+13. UNION
+14. date & time
+15. PRIMARY KEY & FOREIGN KEY
+16. JOIN
+17. GROUP BY & HAVING
+18. 子查询
+19. ANY & ALL
+20. 事物
+21. INDEX
+22. VIEW
+23. 锁
+24. 函数
